@@ -47,3 +47,21 @@ header{
     }
 }
 
+// table style
+.table {
+    border-collapse: collapse;
+    margin: auto;
+
+    th,td {
+        border: 1px solid black;
+        width: 150px;
+        height: 50px;
+        padding: 0.25rem 0.5rem;
+    }
+    th {
+        background-color: cadetblue;
+    }
+    td {
+        background-color: blanchedalmond;
+    }
+}
