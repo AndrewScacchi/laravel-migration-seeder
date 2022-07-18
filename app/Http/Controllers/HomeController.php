@@ -8,6 +8,7 @@ class HomeController extends Controller
 {
     //
     public function index() {
-        return view('home');
+        $trains = \App\Train::all();
+        return view('home', compact('trains'));
     }
 }

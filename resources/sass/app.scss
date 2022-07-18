@@ -9,7 +9,7 @@
 }
 
 .container {
-    height: calc(100vh - 200px);
+    min-height: calc(100vh - 200px);
     padding: 1rem 15%;
     h1 {
         text-align: center;
