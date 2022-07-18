@@ -25,10 +25,12 @@
                     <td>{{ $trains[$i]->departing_time }}</td>
                     <td>{{ $trains[$i]->arriving_time }}</td>
                     <td>
-                        @if($trains[$i]->on_schedule)
-                            On Time
-                        @else
+                        @if($trains[$i]->cancelled)
                             Cancelled
+                        @elseif($trains[$i]->on_time)
+                            On time
+                        @else
+                            Late 10 mins
                         @endif
                     </td>
                 </tr>
