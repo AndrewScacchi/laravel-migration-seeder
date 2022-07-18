@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: calc(100vh - 200px);
+  padding: 1rem 15%;
+}
+
+.container h1 {
+  text-align: center;
+}
+
+header,
+footer {
+  height: 100px;
+  width: 100%;
+  background-color: grey;
+  padding: 1rem 15% 0;
+}
+
+header {
+  background-color: cornflowerblue;
+}
+
+.navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  height: 100%;
+}
+
+.navBar li {
+  list-style: none;
+  padding: 1rem;
+  width: 100px;
+  font-size: 1.5rem;
+  height: 100%;
+}
+
+.navBar li:hover {
+  cursor: pointer;
+  color: white;
+  border-bottom: 5px solid white;
+}
+
