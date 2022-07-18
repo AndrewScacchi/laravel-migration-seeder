@@ -26,9 +26,9 @@
                     <td>{{ $trains[$i]->arriving_time }}</td>
                     <td>
                         @if($trains[$i]->on_schedule)
-                            {{$trains[$i]->on_schedule}}
+                            On Time
                         @else
-                            {{ $trains[$i]->cancelled }}
+                            Cancelled
                         @endif
                     </td>
                 </tr>

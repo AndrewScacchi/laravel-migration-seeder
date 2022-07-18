@@ -13,6 +13,21 @@ class TrainsTableSeeder extends Seeder
     public function run(Faker $faker)
     {
         $company = ['Trenord', 'Trenitalia', 'OBD'];
+
+        for($i=0; $i<3; $i++){
+            $train = new Train();
+            $train->train_number = rand(200, 370);
+            $train->company = $company[rand(0,2)];
+            $train->departing_station = 'Milano Centrale';
+            $train->arriving_station = $faker->city;
+            $train->departing_time = $faker->time;
+            $train->arriving_time = $faker->time;
+            $train->train_coaches = rand(3,7);
+            $train->on_schedule = false;
+            $train->cancelled = true;
+            $train->save();
+
+        };
         //
         for($i=0; $i<20; $i++){
             $train = new Train();
