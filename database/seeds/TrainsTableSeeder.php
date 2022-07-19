@@ -38,7 +38,7 @@ class TrainsTableSeeder extends Seeder
             $train->departing_time = $faker->time;
             $train->arriving_time = $faker->time;
             $train->train_coaches = rand(3,7);
-            $train->on_schedule = true;
+            $train->on_schedule = rand(true, false);
             $train->cancelled = false;
             $train->save();
 

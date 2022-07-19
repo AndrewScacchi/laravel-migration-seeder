@@ -27,7 +27,7 @@
                     <td>
                         @if($trains[$i]->cancelled)
                             Cancelled
-                        @elseif($trains[$i]->on_time)
+                        @elseif($trains[$i]->on_schedule)
                             On time
                         @else
                             Late 10 mins
